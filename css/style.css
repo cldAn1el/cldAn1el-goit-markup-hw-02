@@ -3,6 +3,7 @@
 :root {
   --main-color: #2196f3;
   --background-color: #2F303A;
+  --nav-color: #757575;
 }
 
 * {
@@ -59,15 +60,32 @@ body {
 
 .text-link {
   text-decoration: none;
-  color: var(--background-color);
+  color: #212121;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
 
+.text-link.current {
+  color: var(--main-color);
+}
+
+.mail-text {
+  color: var(--nav-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.mail-text:hover, .mail-text:focus {
+  color: var(--main-color);
+}
+
 .text-number {
-  color: #757575;
+  color: var(--nav-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -98,10 +116,6 @@ body {
 /*Main section*/
 
 .main-content {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
   background: #2F303A;
 }
 
@@ -114,17 +128,11 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 200px 452px 280px 452px;
 }
 
 /*Buttons section*/
 
 .button {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 732px;
-  top: 440px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
