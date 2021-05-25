@@ -56,6 +56,7 @@ body {
 
 .link-menu {
   list-style-type: none;
+  box-sizing: border-box;
 }
 
 .text-link {
